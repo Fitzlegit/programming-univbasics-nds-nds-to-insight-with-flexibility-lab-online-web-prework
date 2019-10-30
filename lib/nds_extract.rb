@@ -80,7 +80,8 @@ def gross_per_studio(collection)
     dir_hash = collection[index]
     studio_name = dir_hash[:studio]
     
-    if !total[]
+    if !total[studio_name]
+      
     
      
     
