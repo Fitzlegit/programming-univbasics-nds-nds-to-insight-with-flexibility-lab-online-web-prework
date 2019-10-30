@@ -100,7 +100,7 @@ def movies_with_directors_set(source)
     dir_name = source[index][:name]
     dir_information = source[index][:movies]
     
-    dir_movies << movies_with_directors_set(dir_name, dir_information)
+    dir_movies << movies_with_directors_key(dir_name, dir_information)
     
     index += 1
   end
