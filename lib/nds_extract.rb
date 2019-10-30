@@ -53,7 +53,7 @@ def movies_with_director_key(name, movies_collection)
   
   while index < movies_collection.length do
     dir_hash = movies_collection[index]
-    dir_catalog << movies_collection(name, dir_hash)
+    dir_catalog << movie_with_director_name(name, dir_hash)
     
     index += 1
   end
