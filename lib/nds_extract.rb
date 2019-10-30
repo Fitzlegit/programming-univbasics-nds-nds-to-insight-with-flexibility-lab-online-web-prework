@@ -77,7 +77,7 @@ def gross_per_studio(collection)
   
   while index < collection.length do
     dir_hash = collection[index]
-    studio_name = dir_hash[:movies][index][:studio]
+    studio_name = dir_hash[:studio]
     
     total_gross += dir[:movies][index] 
     
