@@ -81,13 +81,16 @@ def gross_per_studio(collection)
     studio_name = dir_hash[:studio]
     
     if !total[studio_name]
-      
+      total[studio_name] = dir_hash[:worldwide_gross]
+    else
+      total[studio_name] += dir_hash[:worldwide_gross]
+    end
     
      
     
     index += 1
   end
-  
+  total
 end
 
 def movies_with_directors_set(source)
