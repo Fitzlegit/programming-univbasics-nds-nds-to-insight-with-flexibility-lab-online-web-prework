@@ -57,8 +57,8 @@ def movies_with_director_key(name, movies_collection)
     
     index += 1
   end
-  dir_hash
-  p dir_hash
+  dir_catalog
+  p dir_catalog
 end
 
 
