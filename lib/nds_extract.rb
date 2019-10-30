@@ -54,7 +54,7 @@ def movies_with_director_key(name, movies_collection)
   
   while index < movies_collection.length do
     
-    dir_hash[name] = movies_collection[0]
+    dir_hash[name] = movies_collection[index]
     
     index += 1
   end
