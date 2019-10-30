@@ -102,6 +102,7 @@ def movies_with_directors_set(source)
     
     dir_movies << movies_with_directors_set(dir_name, dir_information)
     
+    index += 1
     
   end
   
