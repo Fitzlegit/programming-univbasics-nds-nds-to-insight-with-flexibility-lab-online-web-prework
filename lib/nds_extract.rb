@@ -97,7 +97,10 @@ def movies_with_directors_set(source)
   index = 0
   dir_movies = []
   while index < source.length do
+    dir_name = source[index][:name]
+    dir_information = source[index][:movies]
     
+    dir_movies << movies_with_directors_set(dir_name, dir_information)
     
     
   end
